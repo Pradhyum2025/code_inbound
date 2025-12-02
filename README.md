@@ -103,7 +103,7 @@ Success responses look like:
 {
   "status": true,
   "message": "User created successfully",
-  "data": { ... }
+  "data": {  }
 }
 ```
 
@@ -140,4 +140,3 @@ npm run test:e2e
 2. Login at POST `/auth/login` and copy the token
 3. Use the token in Authorization header for `/users` endpoints
 
-That's pretty much it. Let me know if you have questions!
