@@ -53,6 +53,7 @@ export class UsersService {
   // get all users
   async findAll() {
     const users = await this.usersRepository.find();
+    console.log("Getting reqest at find all user")
     return users.map((user) => this.removePassword(user));
   }
 

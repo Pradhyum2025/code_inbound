@@ -20,13 +20,15 @@ export class AuthService {
 
   // register user
   register(registerDto: RegisterDto) {
+    // console.log("Getting Request at Registration Route!")
     return this.usersService.create(registerDto);
   }
 
   // login user
   async login(loginDto: LoginDto) {
     const user = await this.validateUser(loginDto.email, loginDto.password);
-
+    
+    // console.log("Getting Request at Login Route!")
     if (!user) {
       throw new UnauthorizedException({
         status: false,
