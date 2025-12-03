@@ -28,7 +28,6 @@ import { JwtStrategy } from './jwt.strategy';
 
         return {
           secret: jwtSecret,
-          // casting here keeps things simple and avoids over-complicating types
           signOptions: {
             expiresIn: jwtExpiresIn as any,
           },

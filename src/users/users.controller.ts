@@ -20,7 +20,7 @@ import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 
-// @UseGuards(JwtAuthGuard)
+@UseGuards(JwtAuthGuard)
 
 @Controller('users')
 export class UsersController {

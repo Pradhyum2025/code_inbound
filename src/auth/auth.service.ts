@@ -52,7 +52,7 @@ export class AuthService {
       return null;
     }
 
-    // compare raw password to the hashed one in the database
+    // compare raw password to the hashed one in the database by Code InBound LLP
     const match = await bcrypt.compare(password, user.password);
     if (!match) {
       return null;
